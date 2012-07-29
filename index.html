@@ -14,14 +14,14 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
-	$(".menu2 a").append("<em></em>");
+	$(".menu a").append("<em></em>");
 	
-	$(".menu2 a").hover(function() {
+	$(".menu a").hover(function() {
 		$(this).find("em").animate({opacity: "show", top: "-75"}, "slow");
 		var hoverText = $(this).attr("title");
 	    $(this).find("em").text(hoverText);
 	}, function() {
-		$(this).find("em").animate({opacity: "hide", top: "-85"}, "fast");
+		$(this).find("em").animate({opacity: "hide", top: "-85"}, "slow");
 	});
 
 
@@ -36,15 +36,15 @@ $(document).ready(function(){
 <h1> Animated Hover </h1>
 
 
-<ul class="menu2">
+<ul class="menu">
 	<li>
 		<a href="http://www.webdesignerwall.com" title="Go to homepage">Home</a>		
 	</li>
 	<li>
-		<a href="http://www.webdesignerwall.com/about/" title="Find out who I am">About</a>
+		<a href="http://feeds.feedburner.com/WebDesignerWall" title="See what I've done">Work</a>
 	</li>
 	<li>
-		<a href="http://feeds.feedburner.com/WebDesignerWall" title="Subscribe RSS feeds">Subscribe RSS</a>
+		<a href="http://www.webdesignerwall.com/about/" title="Find out who I am">About</a>
 	</li>
 </ul>
 </div>

@@ -12,12 +12,12 @@ h1
 	font-size:5em;
 	margin-bottom:3em;
 }
-.menu2 {
+.menu {
 	margin: 100px 0 0;
 	padding: 0;
 	list-style: none;
 }
-.menu2 li {
+.menu li {
 	padding: 0;
 	margin: 0 2px;
 	float: left;
@@ -37,7 +37,8 @@ h1
 	height:400px; 
 	border-radius:10px;
 }
-.menu2 a {
+
+.menu a {
 	padding: 14px 10px;
 	display: block;
 	/*	color: white;*/
@@ -46,12 +47,10 @@ h1
 	font-weight: bold;
 
 	color: #888;
-	text-shadow: 0 1px 0 rgba(255,255,255, 0.8);
 	text-decoration: none;
 	text-align: center;
 	font-size: 12px;
 	font-weight: 700;
-	font-family: helvetica, arial, sans-serif;
 	border-radius: 4px;
 	border: 1px solid #bcbcbc;
 
@@ -66,10 +65,12 @@ h1
 
 /*	background: url(../images/button.gif) no-repeat center center;*/
 }
-.menu2 li em {
+
+.menu li em {
 	font-weight: normal;
-	background-color:red;
+	background-color:grey;
 	border-radius:10px;
+	color:white;
 	/*	background: url(../images/hover.png) no-repeat;*/
 	width: 100px;
 	height: 30px;
@@ -77,10 +78,18 @@ h1
 	top: -85px;
 	left: 20px;
 	text-align: center;
-	padding: 20px 12px 10px;
+	padding: 30px 12px 10px;
 	font-style: normal;
 	z-index: 2;
 	display: none;
+	
+	background: #999; /* for non-css3 browsers */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #ccc,  #000); /* for firefox 3.6+ */
+	
+	
 }
 
 
